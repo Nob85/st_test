@@ -52,7 +52,6 @@ pydeck==0.9.0b0
 Pygments==2.16.1
 pypdf==4.2.0
 PyQt5==5.15.10
-pywin32==306
 pyzmq==25.1.1
 referencing==0.35.0
 requests==2.31.0
