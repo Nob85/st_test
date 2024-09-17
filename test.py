@@ -3,7 +3,7 @@ import MeCab
 import random
 import time
 
-st.title("ポケット🤗<br>やる気チャージ")
+st.title("ポケット🤗  \nやる気チャージ")
 # st.title("やる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
@@ -36,10 +36,10 @@ now = 2556
 if st.button("Check"):
     with st.spinner("計測中"):
         time.sleep(3)
-    st.write(f"あなたは今日、<br>{ans} ポイント 感謝されました🎉")
+    st.write(f"あなたは今日、  \n{ans} ポイント 感謝されました🎉")
     # st.write(f"{ans} ポイント感謝されました🎉")
     now += ans
     st.write("👏👏👏",)
-st.write(f"今日までの累積ポイントは<br>{now} ポイント です😃")
+st.write(f"今日までの累積ポイントは  \n{now} ポイント です😃")
 # st.write(f"{now} ポイント です😃")
 
