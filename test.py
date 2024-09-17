@@ -4,11 +4,11 @@ import random
 import time
 
 # st.title("今日もきっといい日")
-st.title("ポケットやる気メーター")
+st.title("ポケットやる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
 text_input = st.text_area("心に残った一言を記入してください", "")
-mecab = MeCab.Tagger()
+mecab = MeCab.Tagger("-r/dev/null -d/home/adminuser/venv/lib/python3.12/site-packages/unidic/dicdir/mecabrc")
 tmp = mecab.parse(text_input)
 rel = tmp.split("\n")
 s_list = [s.split(",")[0].split("\t") for s in rel[:-2]]
