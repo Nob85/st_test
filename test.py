@@ -1,19 +1,13 @@
-# from subprocess import Popen
-# Popen(["python", "unidic", "download"])
-
 import streamlit as st
 import MeCab
 import random
 import time
-# import unidic
 
-
-# st.title("今日もきっといい日")
-st.title("ポケットやる気チャージ")
+st.title("ポケット🤗")
+st.title("やる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
 text_input = st.text_area("心に残った一言を記入してください", "")
-# mecab = MeCab.Tagger('-d "{}"'.format(unidic.DICDIR))
 mecab = MeCab.Tagger()
 tmp = mecab.parse(text_input)
 rel = tmp.split("\n")
@@ -42,8 +36,10 @@ now = 2556
 if st.button("Check"):
     with st.spinner("計測中"):
         time.sleep(3)
-    st.write(f"あなたは今日、{ans} ポイント感謝されました🎉")
+    st.write("あなたは今日、")
+    st.write(f"{ans} ポイント感謝されました🎉")
     now += ans
-    st.write("👏👏👏","\n\n")
-st.write(f"今日までの累積ポイントは　{now} ポイント　です😃")
+    st.write("👏👏👏",)
+st.write("今日までの累積ポイントは")
+st.write(f"{now} ポイント　です😃")
 
