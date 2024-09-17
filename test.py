@@ -1,3 +1,4 @@
+python -m unidic download
 import streamlit as st
 import MeCab
 import random
