@@ -5,7 +5,7 @@ import streamlit as st
 import MeCab
 import random
 import time
-import unidic
+# import unidic
 
 
 # st.title("今日もきっといい日")
@@ -13,7 +13,8 @@ st.title("ポケットやる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
 text_input = st.text_area("心に残った一言を記入してください", "")
-mecab = MeCab.Tagger('-d "{}"'.format(unidic.DICDIR))
+# mecab = MeCab.Tagger('-d "{}"'.format(unidic.DICDIR))
+mecab = MeCab.Tagger()
 tmp = mecab.parse(text_input)
 rel = tmp.split("\n")
 s_list = [s.split(",")[0].split("\t") for s in rel[:-2]]
