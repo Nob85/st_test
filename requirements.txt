@@ -38,7 +38,7 @@ MarkupSafe==2.1.5
 matplotlib==3.9.2
 matplotlib-inline==0.1.6
 mdurl==0.1.2
-mecab-python3==1.0.8
+mecab-python3==1.0.9
 munkres==1.1.4
 nest-asyncio==1.5.8
 numexpr
