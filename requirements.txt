@@ -67,7 +67,6 @@ PyQt5-sip
 python-dateutil
 python-Levenshtein
 pytz
-pywin32==306
 pyzmq==25.1.1
 rapidfuzz
 referencing==0.35.0
