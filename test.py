@@ -1,9 +1,12 @@
-python -m unidic download
+from subprocess import Popen
+Popen(["python", "unidic", "download"])
+
 import streamlit as st
 import MeCab
 import random
 import time
 import unidic
+
 
 # st.title("今日もきっといい日")
 st.title("ポケットやる気チャージ")
