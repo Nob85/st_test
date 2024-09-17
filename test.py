@@ -3,8 +3,8 @@ import MeCab
 import random
 import time
 
-st.title("ポケット🤗")
-st.title("やる気チャージ")
+st.write("#ポケット🤗  \nやる気チャージ")
+# st.title("やる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
 text_input = st.text_area("心に残った一言を記入してください", "")
@@ -40,6 +40,6 @@ if st.button("Check"):
     # st.write(f"{ans} ポイント感謝されました🎉")
     now += ans
     st.write("👏👏👏",)
-st.write(f"**今日までの累積ポイントは  \n{now} ポイント です**😃")
+st.write(f"**今日までの累積ポイントは  \n{now:,} ポイント です**😃")
 # st.write(f"{now} ポイント です😃")
 
