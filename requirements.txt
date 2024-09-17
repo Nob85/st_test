@@ -10,7 +10,6 @@ charset-normalizer==3.3.0
 click==8.1.7
 colorama==0.4.6
 comm==0.1.4
-contourpy @ file:///C:/b/abs_853rfy8zse/croot/contourpy_1700583617587/work
 cryptography==42.0.5
 cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
 debugpy==1.8.0
