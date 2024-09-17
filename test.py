@@ -6,7 +6,7 @@ import time
 st.title(":red[ポケット]🤗")
 st.title(":red[やる気チャージ]")
 # st.title("やる気チャージ")
-st.text("テキストボックスに今日心に残った言葉を記入してください")
+st.text("テキストボックスに  \n今日心に残った言葉を記入してください")
 
 text_input = st.text_area("心に残った一言を記入してください", "")
 mecab = MeCab.Tagger()
