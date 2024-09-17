@@ -3,8 +3,8 @@ import MeCab
 import random
 import time
 
-st.header("ポケット🤗")
-st.header(":red[やる気チャージ]", divider="gray")
+st.title(":red[ポケット]🤗")
+st.title(":red[やる気チャージ]", divider="gray")
 # st.title("やる気チャージ")
 st.text("テキストボックスに今日心に残った言葉を記入してください")
 
