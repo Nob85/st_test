@@ -1,5 +1,5 @@
-from subprocess import Popen
-Popen(["python", "unidic", "download"])
+# from subprocess import Popen
+# Popen(["python", "unidic", "download"])
 
 import streamlit as st
 import MeCab
