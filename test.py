@@ -17,7 +17,7 @@ inte = []#interjection
 other = []
 tmp = []
 ans = 0
-parents = ["父", "母", "パパ", "ママ", "ぱぱ", "まま"] 
+parents = ["父", "母", "パパ", "ママ"] 
 for s_word in s_list:
     if "名詞" in s_word[4]:
         noun.append(s_word[0])
@@ -28,10 +28,11 @@ for s_word in s_list:
     else:
         other.append(s_word[0])
 
-    if s_word[0] == "さん" and "接尾辞" in tmp[4]:
+    if s_word[0] == "さん" and "接尾辞" in s_word[4]:
+        if "名詞" in tmp[4]:
         ans += 500
             
-    if s_word[0] in parents:
+    if s_word[3] in parents:
         ans += 500
     tmp = s_word
 
