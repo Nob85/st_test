@@ -49,5 +49,5 @@ if st.button("Check"):
     now += ans
     st.write("👏👏👏")
 st.write(f"**今日までの累積ポイントは  \n{now:,} ポイント です**😃")
-st.write(tmp)
 st.write(rel)
+st.write(s_list)
