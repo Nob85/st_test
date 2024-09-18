@@ -19,16 +19,16 @@ tmp = []
 ans = 0
 parents = ["父", "母", "パパ", "ママ", "ぱぱ", "まま"] 
 for s_word in s_list:
-    if s_word[1] == "名詞":
+    if "名詞" in s_word[4]:
         noun.append(s_word[0])
-    elif s_word[1] == "形容詞":
+    elif "形容詞" in s_word[4]:
         adje.append(s_word[0])
-    elif s_word[1] == "感動詞":
+    elif "感動詞" in s_word[4]:
         inte.append(s_word[0])
     else:
         other.append(s_word[0])
 
-    if s_word[0] == "さん" and tmp[1] == "名詞":
+    if s_word[0] == "さん" and "接尾辞" in tmp[4]:
         ans += 500
             
     if s_word[0] in parents:
