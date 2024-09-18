@@ -31,7 +31,8 @@ for s_word in s_list:
     if s_word[0] == "さん" and s_word[1] == "接尾辞":
         if tmp[1] == "名詞":
             ans += 500
-    elif s_word[0] in parents:
+            
+    if s_word[0] in parents:
         ans += 500
     tmp = s_word
 
