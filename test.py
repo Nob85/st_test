@@ -28,9 +28,8 @@ for s_word in s_list:
     else:
         other.append(s_word[0])
 
-    if s_word[0] == "さん" and s_word[1] == "接尾辞":
-        if tmp[1] == "名詞":
-            ans += 500
+    if s_word[0] == "さん" and tmp[1] == "名詞":
+        ans += 500
             
     if s_word[0] in parents:
         ans += 500
